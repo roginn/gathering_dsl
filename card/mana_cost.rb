@@ -13,11 +13,9 @@ module ManaCost
       args.each do |arg|
         if arg.is_a? Fixnum
           @mana_cost[:C] = arg
-          # puts "adding #{arg} colorless manas"
         elsif arg.is_a? Symbol
           @mana_cost[arg] ||= 0
           @mana_cost[arg] += 1
-          # puts "adding 1 #{arg} mana"
         else
           throw 'Mana type not recognized'
         end

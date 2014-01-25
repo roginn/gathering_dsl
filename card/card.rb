@@ -2,9 +2,7 @@ class Card
 
   extend ManaCost
   extend CardDescription
-  extend CardSubtypes
   extend CardTypes
-
   extend PowerToughness
   extend CreatureAttributes
 

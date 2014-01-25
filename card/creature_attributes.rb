@@ -17,13 +17,3 @@ module CreatureAttributes
   end
 
 end
-
-# module CreatureAttributesInstanceMethods
-
-#   CreatureAttributesMacros::EVERGREEN.each do |attr|
-#     define_method(attr.to_s + '?') do
-#       self.class.attributes.include? attr
-#     end
-#   end  
-  
-# end

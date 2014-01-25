@@ -1,5 +1,7 @@
 module CardTypes
   
+  include CardSubtypes
+
   TYPES = [
     :artifact, :creature, :enchantment, :instant, :land, :phenomenon, :plane,
     :planeswalker, :scheme, :sorcery, :tribal, :vanguard
