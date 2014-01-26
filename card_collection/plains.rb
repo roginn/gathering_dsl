@@ -2,6 +2,8 @@ class Plains < Card
 
   name 'Plains'
 
-  basic land
+  basic land :plains
+
+  mana_source :W
 
 end
