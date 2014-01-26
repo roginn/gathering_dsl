@@ -11,6 +11,7 @@ class WallOfFire < Card
   text 'Tap R: +1/+0 until end of turn.'
 
   flavor 'Struggle, and you will only fan the flames. —Talibah, embermage'
+  
 end
 
 

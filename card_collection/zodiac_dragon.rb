@@ -13,6 +13,7 @@ class ZodiacDragon < Card
 
   flavor '. .  . The kingdoms three are now the stuff of dream, / For men to ' +
          'ponder, past all praise or blame.'
+         
 end
 
 

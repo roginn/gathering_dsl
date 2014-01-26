@@ -16,4 +16,10 @@ class FiligreeAngel < Card
   flavor 'I craved enlightenment, and Crucius\'s etherium opened my eyes. I '  +
          'would share my sight with you, but first you must believe.'
 
+
+  #mechanics
+  # whenever :this, :enters_battlefield do
+  #   # ...
+  # end
+
 end
