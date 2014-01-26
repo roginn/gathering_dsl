@@ -14,9 +14,14 @@ class Card
       complete_type = self.full_type_name
       complete_type += " - #{self.full_subtype_names}" unless self.subtypes.empty?
 
-      puts "Name: #{self.name}"
+      puts "#{self.name}"
       puts "#{complete_type}"
-      puts "Mana cost: #{self.mana_cost}"
+      puts "--"
+      puts "Type: #{self.types}"                        if self.types
+      puts "Subtypes: #{self.subtypes}"                if self.subtypes
+      puts "Supertypes: #{self.supertypes}"            if self.supertypes
+      puts "Mana cost: #{self.mana_cost}"              if self.mana_cost
+      puts "Mana source: #{self.mana_source}"          if self.mana_source
       puts "Attributes: #{self.attributes.join(', ')}" if self.attributes
       puts "Power: #{self.power}"                      if self.power
       puts "Toughness: #{self.toughness}"              if self.toughness
