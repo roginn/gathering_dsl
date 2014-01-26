@@ -10,7 +10,6 @@ module CardTypes
 
   TYPES.each do |type|
     define_method(type) do |*args|
-      # puts "#{self} calling type #{type} with args #{args.inspect}"
       @subtypes ||= []
       @types    ||= []
       @types << type.to_sym
