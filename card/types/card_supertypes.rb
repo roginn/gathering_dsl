@@ -1,5 +1,7 @@
 module CardSupertypes
   
+  attr_accessor :supertypes
+
   SUPERTYPES = [
     :basic, :legendary, :ongoing, :snow, :world
   ]
@@ -8,7 +10,6 @@ module CardSupertypes
     define_method(type) do |*args|
       @supertypes    ||= []
       @supertypes << type.to_sym
-      # args.each { |subtype| @subtypes << subtype unless subtype.nil? }
       nil
     end
 
