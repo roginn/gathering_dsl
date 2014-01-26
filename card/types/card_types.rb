@@ -1,5 +1,6 @@
 module CardTypes
   
+  include CardSupertypes
   include CardSubtypes
 
   TYPES = [
@@ -24,7 +25,8 @@ module CardTypes
 
   def full_type_name
     # apply reverse method to get the type name as described in the class
-    @types.reverse.map { |x| x.capitalize }.join(' ')
+    supertype = full_supertype_name + ' ' if supertype
+    supertype.to_s + @types.reverse.map { |x| x.capitalize }.join(' ')
   end
 
 end

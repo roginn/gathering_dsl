@@ -1,5 +1,6 @@
 require 'eigenclass'
 require 'card/types/card_subtypes'
+require 'card/types/card_supertypes'
 require 'card/types/card_types'
 require 'card/mana_cost'
 require 'card/card_description'
